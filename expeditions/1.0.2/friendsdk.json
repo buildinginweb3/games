@@ -1,0 +1,164 @@
+{
+  "id": "expeditions",
+  "title": "Rare Friends: Expeditions",
+  "version": "1.0.2",
+  "client": "client/main.tsx",
+  "server": "server/index.ts",
+  "display": {
+    "minAspectRatio": "9:20",
+    "maxAspectRatio": "21:9",
+    "fullscreenButton": false
+  },
+  "currency": "RF",
+  "items": {
+    "pass": {
+      "name": "Expedition Pass",
+      "description": "One expedition for your Friend. Every expedition ends at a chest with one find."
+    },
+    "common": {
+      "name": "Common find",
+      "description": "Kept: +1% XP on every expedition.",
+      "redeemValue": "400"
+    },
+    "uncommon": {
+      "name": "Uncommon find",
+      "description": "Kept: +2% XP on every expedition.",
+      "redeemValue": "750"
+    },
+    "rare": {
+      "name": "Rare find",
+      "description": "Kept: +4.5% XP on every expedition, a blue glow and the Feather Pin.",
+      "redeemValue": "1500"
+    },
+    "epic": {
+      "name": "Epic find",
+      "description": "Kept: +8% XP on every expedition, a purple glow and the Amber Amulet.",
+      "redeemValue": "2500"
+    },
+    "legendary": {
+      "name": "Legendary find",
+      "description": "Kept: +17% XP on every expedition, a gold glow and the Scarab Brooch.",
+      "redeemValue": "5000"
+    },
+    "mythic": {
+      "name": "Mythic find",
+      "description": "Kept: +36% XP on every expedition, a rainbow glow and the Heart Pendant.",
+      "redeemValue": "10000"
+    }
+  },
+  "actions": {
+    "buyPass": {
+      "type": "purchase",
+      "label": "Expedition Pass",
+      "description": "Passes are kept by your Friend until it sets out.",
+      "price": "1000",
+      "gives": {
+        "pass": 1
+      },
+      "maxQuantity": 3,
+      "loaned": true
+    },
+    "expedition": {
+      "type": "draw",
+      "label": "Set out on an expedition",
+      "description": "The pass decides the find now; your Friend brings it back in the chest at the end of the run.",
+      "burns": {
+        "pass": 1
+      },
+      "loaned": true,
+      "table": [
+        {
+          "weight": 2000
+        },
+        {
+          "weight": 3500,
+          "item": "common"
+        },
+        {
+          "weight": 2200,
+          "item": "uncommon"
+        },
+        {
+          "weight": 1300,
+          "item": "rare"
+        },
+        {
+          "weight": 600,
+          "item": "epic"
+        },
+        {
+          "weight": 300,
+          "item": "legendary"
+        },
+        {
+          "weight": 100,
+          "item": "mythic"
+        }
+      ]
+    },
+    "sellCommon": {
+      "type": "redeem",
+      "label": "Sell Common finds",
+      "redeems": "common",
+      "maxQuantity": 1000
+    },
+    "sellUncommon": {
+      "type": "redeem",
+      "label": "Sell Uncommon finds",
+      "redeems": "uncommon",
+      "maxQuantity": 1000
+    },
+    "sellRare": {
+      "type": "redeem",
+      "label": "Sell Rare finds",
+      "redeems": "rare",
+      "maxQuantity": 1000
+    },
+    "sellEpic": {
+      "type": "redeem",
+      "label": "Sell Epic finds",
+      "redeems": "epic",
+      "maxQuantity": 1000
+    },
+    "sellLegendary": {
+      "type": "redeem",
+      "label": "Sell Legendary finds",
+      "redeems": "legendary",
+      "maxQuantity": 1000
+    },
+    "sellMythic": {
+      "type": "redeem",
+      "label": "Sell Mythic finds",
+      "redeems": "mythic",
+      "maxQuantity": 1000
+    },
+    "buy": {
+      "type": "external",
+      "label": "Outfitter",
+      "lane": "shop",
+      "description": "Pays for the gear, cosmetics and rations you picked, at each item's own price, in one payment."
+    }
+  },
+  "leaderboards": {
+    "forest": {
+      "order": "desc",
+      "operator": "best",
+      "reset": "weekly"
+    },
+    "cave": {
+      "order": "desc",
+      "operator": "best",
+      "reset": "weekly"
+    },
+    "ruins": {
+      "order": "desc",
+      "operator": "best",
+      "reset": "weekly"
+    },
+    "showcase": {
+      "order": "desc",
+      "operator": "set",
+      "reset": "never"
+    }
+  }
+}
