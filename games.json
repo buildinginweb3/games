@@ -5,6 +5,18 @@
         "1.0.0"
       ],
       "latest": "1.0.0"
+    },
+    "penalty-kings": {
+      "versions": [
+        "1.0.0"
+      ],
+      "latest": "1.0.0"
+    },
+    "friend-nook": {
+      "versions": [
+        "1.0.0"
+      ],
+      "latest": "1.0.0"
     }
   }
 }

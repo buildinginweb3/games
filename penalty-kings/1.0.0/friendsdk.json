@@ -1,0 +1,820 @@
+{
+  "id": "penalty-kings",
+  "title": "Penalty Kings",
+  "version": "1.0.0",
+  "client": "client/main.tsx",
+  "server": "server/index.ts",
+  "display": {
+    "minAspectRatio": "9:16",
+    "maxAspectRatio": "21:9",
+    "fullscreenButton": false
+  },
+  "currency": "USDG",
+  "items": {
+    "scuffed": {
+      "name": "Scuffed ball",
+      "image": "items/scuffed.png"
+    },
+    "training": {
+      "name": "Training ball",
+      "image": "items/training.png"
+    },
+    "match": {
+      "name": "Match ball",
+      "image": "items/match.png"
+    },
+    "proBall": {
+      "name": "Pro Ball",
+      "image": "items/proBall.png"
+    },
+    "silver": {
+      "name": "Silver ball",
+      "image": "items/silver.png"
+    },
+    "gold": {
+      "name": "Gold ball",
+      "image": "items/gold.png"
+    },
+    "goldenBoot": {
+      "name": "Golden Boot Ball",
+      "image": "items/goldenBoot.png"
+    }
+  },
+  "actions": {
+    "buyPack": {
+      "type": "draw",
+      "label": "Buy a ball pack",
+      "description": "Two balls per pack.",
+      "price": "2",
+      "draws": 2,
+      "maxQuantity": 10,
+      "loaned": true,
+      "table": [
+        {
+          "weight": 3150,
+          "item": "scuffed"
+        },
+        {
+          "weight": 2700,
+          "item": "training"
+        },
+        {
+          "weight": 2000,
+          "item": "match"
+        },
+        {
+          "weight": 1100,
+          "item": "proBall"
+        },
+        {
+          "weight": 700,
+          "item": "silver"
+        },
+        {
+          "weight": 250,
+          "item": "gold"
+        },
+        {
+          "weight": 100,
+          "item": "goldenBoot"
+        }
+      ]
+    },
+    "kickScuffed": {
+      "type": "draw",
+      "label": "Kick the Scuffed ball",
+      "burns": {
+        "scuffed": 1
+      },
+      "loaned": true,
+      "perGeneration": {
+        "1": [
+          {
+            "weight": 3550,
+            "pays": "2"
+          },
+          {
+            "weight": 6450
+          }
+        ],
+        "2": [
+          {
+            "weight": 3500,
+            "pays": "2"
+          },
+          {
+            "weight": 6500
+          }
+        ],
+        "3": [
+          {
+            "weight": 3450,
+            "pays": "2"
+          },
+          {
+            "weight": 6550
+          }
+        ],
+        "4": [
+          {
+            "weight": 3400,
+            "pays": "2"
+          },
+          {
+            "weight": 6600
+          }
+        ],
+        "5": [
+          {
+            "weight": 3350,
+            "pays": "2"
+          },
+          {
+            "weight": 6650
+          }
+        ],
+        "6": [
+          {
+            "weight": 3300,
+            "pays": "2"
+          },
+          {
+            "weight": 6700
+          }
+        ]
+      }
+    },
+    "kickTraining": {
+      "type": "draw",
+      "label": "Kick the Training ball",
+      "burns": {
+        "training": 1
+      },
+      "loaned": true,
+      "perGeneration": {
+        "1": [
+          {
+            "weight": 4250,
+            "pays": "2"
+          },
+          {
+            "weight": 5750
+          }
+        ],
+        "2": [
+          {
+            "weight": 4200,
+            "pays": "2"
+          },
+          {
+            "weight": 5800
+          }
+        ],
+        "3": [
+          {
+            "weight": 4150,
+            "pays": "2"
+          },
+          {
+            "weight": 5850
+          }
+        ],
+        "4": [
+          {
+            "weight": 4100,
+            "pays": "2"
+          },
+          {
+            "weight": 5900
+          }
+        ],
+        "5": [
+          {
+            "weight": 4050,
+            "pays": "2"
+          },
+          {
+            "weight": 5950
+          }
+        ],
+        "6": [
+          {
+            "weight": 4000,
+            "pays": "2"
+          },
+          {
+            "weight": 6000
+          }
+        ]
+      }
+    },
+    "kickMatch": {
+      "type": "draw",
+      "label": "Kick the Match ball",
+      "burns": {
+        "match": 1
+      },
+      "loaned": true,
+      "perGeneration": {
+        "1": [
+          {
+            "weight": 4750,
+            "pays": "2"
+          },
+          {
+            "weight": 5250
+          }
+        ],
+        "2": [
+          {
+            "weight": 4700,
+            "pays": "2"
+          },
+          {
+            "weight": 5300
+          }
+        ],
+        "3": [
+          {
+            "weight": 4650,
+            "pays": "2"
+          },
+          {
+            "weight": 5350
+          }
+        ],
+        "4": [
+          {
+            "weight": 4600,
+            "pays": "2"
+          },
+          {
+            "weight": 5400
+          }
+        ],
+        "5": [
+          {
+            "weight": 4550,
+            "pays": "2"
+          },
+          {
+            "weight": 5450
+          }
+        ],
+        "6": [
+          {
+            "weight": 4500,
+            "pays": "2"
+          },
+          {
+            "weight": 5500
+          }
+        ]
+      }
+    },
+    "kickProBall": {
+      "type": "draw",
+      "label": "Kick the Pro Ball",
+      "burns": {
+        "proBall": 1
+      },
+      "loaned": true,
+      "perGeneration": {
+        "1": [
+          {
+            "weight": 5050,
+            "pays": "2"
+          },
+          {
+            "weight": 4950
+          }
+        ],
+        "2": [
+          {
+            "weight": 5000,
+            "pays": "2"
+          },
+          {
+            "weight": 5000
+          }
+        ],
+        "3": [
+          {
+            "weight": 4950,
+            "pays": "2"
+          },
+          {
+            "weight": 5050
+          }
+        ],
+        "4": [
+          {
+            "weight": 4900,
+            "pays": "2"
+          },
+          {
+            "weight": 5100
+          }
+        ],
+        "5": [
+          {
+            "weight": 4850,
+            "pays": "2"
+          },
+          {
+            "weight": 5150
+          }
+        ],
+        "6": [
+          {
+            "weight": 4800,
+            "pays": "2"
+          },
+          {
+            "weight": 5200
+          }
+        ]
+      }
+    },
+    "kickSilver": {
+      "type": "draw",
+      "label": "Kick the Silver ball",
+      "burns": {
+        "silver": 1
+      },
+      "loaned": true,
+      "perGeneration": {
+        "1": [
+          {
+            "weight": 100,
+            "pays": "16"
+          },
+          {
+            "weight": 500,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3850,
+            "pays": "2"
+          },
+          {
+            "weight": 4750
+          }
+        ],
+        "2": [
+          {
+            "weight": 100,
+            "pays": "16"
+          },
+          {
+            "weight": 500,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3800,
+            "pays": "2"
+          },
+          {
+            "weight": 4800
+          }
+        ],
+        "3": [
+          {
+            "weight": 100,
+            "pays": "16"
+          },
+          {
+            "weight": 500,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3750,
+            "pays": "2"
+          },
+          {
+            "weight": 4850
+          }
+        ],
+        "4": [
+          {
+            "weight": 100,
+            "pays": "16"
+          },
+          {
+            "weight": 500,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3700,
+            "pays": "2"
+          },
+          {
+            "weight": 4900
+          }
+        ],
+        "5": [
+          {
+            "weight": 100,
+            "pays": "16"
+          },
+          {
+            "weight": 500,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3650,
+            "pays": "2"
+          },
+          {
+            "weight": 4950
+          }
+        ],
+        "6": [
+          {
+            "weight": 100,
+            "pays": "16"
+          },
+          {
+            "weight": 500,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3600,
+            "pays": "2"
+          },
+          {
+            "weight": 5000
+          }
+        ]
+      }
+    },
+    "kickGold": {
+      "type": "draw",
+      "label": "Kick the Gold ball",
+      "burns": {
+        "gold": 1
+      },
+      "loaned": true,
+      "perGeneration": {
+        "1": [
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 4150,
+            "pays": "2"
+          },
+          {
+            "weight": 4350
+          }
+        ],
+        "2": [
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 4100,
+            "pays": "2"
+          },
+          {
+            "weight": 4400
+          }
+        ],
+        "3": [
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 4050,
+            "pays": "2"
+          },
+          {
+            "weight": 4450
+          }
+        ],
+        "4": [
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 4000,
+            "pays": "2"
+          },
+          {
+            "weight": 4500
+          }
+        ],
+        "5": [
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3950,
+            "pays": "2"
+          },
+          {
+            "weight": 4550
+          }
+        ],
+        "6": [
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3900,
+            "pays": "2"
+          },
+          {
+            "weight": 4600
+          }
+        ]
+      }
+    },
+    "kickGoldenBoot": {
+      "type": "draw",
+      "label": "Kick the Golden Boot Ball",
+      "burns": {
+        "goldenBoot": 1
+      },
+      "loaned": true,
+      "perGeneration": {
+        "1": [
+          {
+            "weight": 100,
+            "pays": "64"
+          },
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 4150,
+            "pays": "2"
+          },
+          {
+            "weight": 4250
+          }
+        ],
+        "2": [
+          {
+            "weight": 100,
+            "pays": "64"
+          },
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 4100,
+            "pays": "2"
+          },
+          {
+            "weight": 4300
+          }
+        ],
+        "3": [
+          {
+            "weight": 100,
+            "pays": "64"
+          },
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 4050,
+            "pays": "2"
+          },
+          {
+            "weight": 4350
+          }
+        ],
+        "4": [
+          {
+            "weight": 100,
+            "pays": "64"
+          },
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 4000,
+            "pays": "2"
+          },
+          {
+            "weight": 4400
+          }
+        ],
+        "5": [
+          {
+            "weight": 100,
+            "pays": "64"
+          },
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3950,
+            "pays": "2"
+          },
+          {
+            "weight": 4450
+          }
+        ],
+        "6": [
+          {
+            "weight": 100,
+            "pays": "64"
+          },
+          {
+            "weight": 100,
+            "pays": "32"
+          },
+          {
+            "weight": 200,
+            "pays": "16"
+          },
+          {
+            "weight": 400,
+            "pays": "8"
+          },
+          {
+            "weight": 800,
+            "pays": "4"
+          },
+          {
+            "weight": 3900,
+            "pays": "2"
+          },
+          {
+            "weight": 4500
+          }
+        ]
+      }
+    }
+  }
+}
