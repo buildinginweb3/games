@@ -2,17 +2,32 @@
   "games": {
     "friend-studio": {
       "versions": [
-        "1.0.0"
+        "1.0.0",
+        "1.0.1"
       ],
-      "latest": "1.0.0"
+      "latest": "1.0.1"
     },
     "penalty-kings": {
+      "versions": [
+        "1.0.0",
+        "1.0.1"
+      ],
+      "latest": "1.0.1"
+    },
+    "friend-nook": {
+      "versions": [
+        "1.0.0",
+        "1.0.1"
+      ],
+      "latest": "1.0.1"
+    },
+    "rare-breeds": {
       "versions": [
         "1.0.0"
       ],
       "latest": "1.0.0"
     },
-    "friend-nook": {
+    "rare-royale": {
       "versions": [
         "1.0.0"
       ],

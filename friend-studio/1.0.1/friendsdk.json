@@ -1,0 +1,33 @@
+{
+  "id": "friend-studio",
+  "title": "Friend Studio",
+  "version": "1.0.1",
+  "client": "client/main.tsx",
+  "server": "server/index.ts",
+  "display": {
+    "minAspectRatio": "9:16",
+    "maxAspectRatio": "16:9",
+    "maxWidth": 1280,
+    "fullscreenButton": false
+  },
+  "currency": "RF",
+  "items": {
+    "traitUnlock": {
+      "name": "Trait unlock",
+      "description": "Opens one Friend Studio trait for this Friend. The studio records which trait it opened and its edition number."
+    }
+  },
+  "actions": {
+    "unlockTrait": {
+      "type": "purchase",
+      "label": "Unlock traits",
+      "price": "1000",
+      "gives": {
+        "traitUnlock": 1
+      },
+      "maxQuantity": 5,
+      "loaned": true,
+      "description": "1,000 RF per trait. Each trait stays with this Friend and can be reused in any look."
+    }
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "id": "friend-nook",
+  "title": "Friend Nook",
+  "version": "1.0.1",
+  "client": "client/main.tsx",
+  "server": "server/index.ts",
+  "display": {
+    "minAspectRatio": "3:4",
+    "maxAspectRatio": "2:1",
+    "maxWidth": 1200,
+    "fullscreenButton": false
+  },
+  "currency": "RF",
+  "legacy": [
+    "friend-nook-receipts"
+  ],
+  "items": {
+    "arcade": {
+      "name": "Arcade cabinet",
+      "lane": "shop"
+    },
+    "aquarium": {
+      "name": "Aquarium",
+      "lane": "shop"
+    },
+    "beanbag": {
+      "name": "Bean bag",
+      "lane": "shop"
+    },
+    "easel": {
+      "name": "Easel",
+      "lane": "shop"
+    },
+    "telescope": {
+      "name": "Telescope",
+      "lane": "shop"
+    },
+    "vanity": {
+      "name": "Vanity mirror",
+      "lane": "shop"
+    },
+    "piano": {
+      "name": "Toy piano",
+      "lane": "shop"
+    },
+    "bigplant": {
+      "name": "Big plant",
+      "lane": "shop"
+    },
+    "lavalamp": {
+      "name": "Lava lamp",
+      "lane": "shop"
+    },
+    "explorer": {
+      "name": "Explorer Hat",
+      "lane": "shop"
+    },
+    "wizard": {
+      "name": "Wizard Hat",
+      "lane": "shop"
+    },
+    "miner": {
+      "name": "Miner Helmet",
+      "lane": "shop"
+    },
+    "flowers": {
+      "name": "Flower Crown",
+      "lane": "shop"
+    },
+    "beanie": {
+      "name": "Bobble Beanie",
+      "lane": "shop"
+    },
+    "pumpkin": {
+      "name": "Pumpkin Hat",
+      "lane": "shop"
+    },
+    "scarf": {
+      "name": "Knit Scarf",
+      "lane": "shop"
+    },
+    "sweater": {
+      "name": "Cozy Sweater",
+      "lane": "shop"
+    },
+    "vest": {
+      "name": "Ranger Vest",
+      "lane": "shop"
+    },
+    "cape": {
+      "name": "Red Cape",
+      "lane": "shop"
+    },
+    "rainboots": {
+      "name": "Rain Boots",
+      "lane": "shop"
+    },
+    "box": {
+      "name": "Gift Box",
+      "lane": "gifts",
+      "description": "Opening it gives your Friend a keepsake for the hutch."
+    },
+    "common": {
+      "name": "Common keepsake",
+      "redeemValue": "0.35",
+      "lane": "gifts"
+    },
+    "uncommon": {
+      "name": "Uncommon keepsake",
+      "redeemValue": "0.7",
+      "lane": "gifts"
+    },
+    "rare": {
+      "name": "Rare keepsake",
+      "redeemValue": "1.4",
+      "lane": "gifts"
+    },
+    "epic": {
+      "name": "Epic keepsake",
+      "redeemValue": "2.5",
+      "lane": "gifts"
+    },
+    "legendary": {
+      "name": "Legendary keepsake",
+      "redeemValue": "5",
+      "lane": "gifts"
+    }
+  },
+  "actions": {
+    "buyArcade": {
+      "type": "purchase",
+      "label": "Arcade cabinet",
+      "description": "Furniture for your Friend's home.",
+      "price": "600",
+      "gives": {
+        "arcade": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyAquarium": {
+      "type": "purchase",
+      "label": "Aquarium",
+      "description": "Furniture for your Friend's home.",
+      "price": "500",
+      "gives": {
+        "aquarium": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyBeanbag": {
+      "type": "purchase",
+      "label": "Bean bag",
+      "description": "Furniture for your Friend's home.",
+      "price": "300",
+      "gives": {
+        "beanbag": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyEasel": {
+      "type": "purchase",
+      "label": "Easel",
+      "description": "Furniture for your Friend's home.",
+      "price": "400",
+      "gives": {
+        "easel": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyTelescope": {
+      "type": "purchase",
+      "label": "Telescope",
+      "description": "Furniture for your Friend's home.",
+      "price": "600",
+      "gives": {
+        "telescope": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyVanity": {
+      "type": "purchase",
+      "label": "Vanity mirror",
+      "description": "Furniture for your Friend's home.",
+      "price": "500",
+      "gives": {
+        "vanity": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyPiano": {
+      "type": "purchase",
+      "label": "Toy piano",
+      "description": "Furniture for your Friend's home.",
+      "price": "400",
+      "gives": {
+        "piano": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyBigplant": {
+      "type": "purchase",
+      "label": "Big plant",
+      "description": "Furniture for your Friend's home.",
+      "price": "200",
+      "gives": {
+        "bigplant": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyLavalamp": {
+      "type": "purchase",
+      "label": "Lava lamp",
+      "description": "Furniture for your Friend's home.",
+      "price": "200",
+      "gives": {
+        "lavalamp": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyExplorer": {
+      "type": "purchase",
+      "label": "Explorer Hat",
+      "description": "Wardrobe item for your Friend.",
+      "price": "300",
+      "gives": {
+        "explorer": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyWizard": {
+      "type": "purchase",
+      "label": "Wizard Hat",
+      "description": "Wardrobe item for your Friend.",
+      "price": "500",
+      "gives": {
+        "wizard": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyMiner": {
+      "type": "purchase",
+      "label": "Miner Helmet",
+      "description": "Wardrobe item for your Friend.",
+      "price": "400",
+      "gives": {
+        "miner": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyFlowers": {
+      "type": "purchase",
+      "label": "Flower Crown",
+      "description": "Wardrobe item for your Friend.",
+      "price": "300",
+      "gives": {
+        "flowers": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyBeanie": {
+      "type": "purchase",
+      "label": "Bobble Beanie",
+      "description": "Wardrobe item for your Friend.",
+      "price": "300",
+      "gives": {
+        "beanie": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyPumpkin": {
+      "type": "purchase",
+      "label": "Pumpkin Hat",
+      "description": "Wardrobe item for your Friend.",
+      "price": "500",
+      "gives": {
+        "pumpkin": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyScarf": {
+      "type": "purchase",
+      "label": "Knit Scarf",
+      "description": "Wardrobe item for your Friend.",
+      "price": "200",
+      "gives": {
+        "scarf": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buySweater": {
+      "type": "purchase",
+      "label": "Cozy Sweater",
+      "description": "Wardrobe item for your Friend.",
+      "price": "300",
+      "gives": {
+        "sweater": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyVest": {
+      "type": "purchase",
+      "label": "Ranger Vest",
+      "description": "Wardrobe item for your Friend.",
+      "price": "300",
+      "gives": {
+        "vest": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyCape": {
+      "type": "purchase",
+      "label": "Red Cape",
+      "description": "Wardrobe item for your Friend.",
+      "price": "400",
+      "gives": {
+        "cape": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyRainboots": {
+      "type": "purchase",
+      "label": "Rain Boots",
+      "description": "Wardrobe item for your Friend.",
+      "price": "200",
+      "gives": {
+        "rainboots": 1
+      },
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyRiceBalls": {
+      "type": "purchase",
+      "label": "Rice balls",
+      "description": "A treat for the fridge.",
+      "price": "100",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyCheeseToast": {
+      "type": "purchase",
+      "label": "Cheese toast",
+      "description": "A treat for the fridge.",
+      "price": "100",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyHoneyPancakes": {
+      "type": "purchase",
+      "label": "Honey pancakes",
+      "description": "A treat for the fridge.",
+      "price": "100",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buySeaweedCrackers": {
+      "type": "purchase",
+      "label": "Seaweed crackers",
+      "description": "A treat for the fridge.",
+      "price": "100",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyCherryPie": {
+      "type": "purchase",
+      "label": "Cherry pie",
+      "description": "A treat for the fridge.",
+      "price": "100",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyMangoPudding": {
+      "type": "purchase",
+      "label": "Mango pudding",
+      "description": "A treat for the fridge.",
+      "price": "100",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyBerryYoghurt": {
+      "type": "purchase",
+      "label": "Berry yoghurt",
+      "description": "A treat for the fridge.",
+      "price": "100",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyCornDogs": {
+      "type": "purchase",
+      "label": "Corn dogs",
+      "description": "A treat for the fridge.",
+      "price": "100",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buySnacks": {
+      "type": "purchase",
+      "label": "Snack pack",
+      "description": "Four snacks for the fridge.",
+      "price": "100",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyMeals": {
+      "type": "purchase",
+      "label": "Groceries",
+      "description": "Three meals to cook.",
+      "price": "200",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyCake": {
+      "type": "purchase",
+      "label": "Birthday cake",
+      "description": "Serve it at the dining table.",
+      "price": "300",
+      "loaned": true,
+      "lane": "shop"
+    },
+    "buyBox": {
+      "type": "purchase",
+      "label": "Buy gift boxes",
+      "price": "100",
+      "gives": {
+        "box": 1
+      },
+      "maxQuantity": 16,
+      "loaned": true,
+      "lane": "gifts"
+    },
+    "openBox": {
+      "type": "draw",
+      "label": "Open a Gift Box",
+      "description": "A keepsake for the hutch: keep it or sell it.",
+      "burns": {
+        "box": 1
+      },
+      "table": [
+        {
+          "weight": 4500,
+          "item": "common"
+        },
+        {
+          "weight": 2800,
+          "item": "uncommon"
+        },
+        {
+          "weight": 1700,
+          "item": "rare"
+        },
+        {
+          "weight": 700,
+          "item": "epic"
+        },
+        {
+          "weight": 300,
+          "item": "legendary"
+        }
+      ],
+      "loaned": true,
+      "lane": "gifts"
+    },
+    "sellCommon": {
+      "type": "redeem",
+      "label": "Sell a common keepsake",
+      "maxQuantity": 16,
+      "redeems": "common",
+      "loaned": true
+    },
+    "sellUncommon": {
+      "type": "redeem",
+      "label": "Sell a uncommon keepsake",
+      "maxQuantity": 16,
+      "redeems": "uncommon",
+      "loaned": true
+    },
+    "sellRare": {
+      "type": "redeem",
+      "label": "Sell a rare keepsake",
+      "maxQuantity": 16,
+      "redeems": "rare",
+      "loaned": true
+    },
+    "sellEpic": {
+      "type": "redeem",
+      "label": "Sell a epic keepsake",
+      "maxQuantity": 16,
+      "redeems": "epic",
+      "loaned": true
+    },
+    "sellLegendary": {
+      "type": "redeem",
+      "label": "Sell a legendary keepsake",
+      "maxQuantity": 16,
+      "redeems": "legendary",
+      "loaned": true
+    }
+  }
+}

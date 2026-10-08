@@ -1,0 +1,110 @@
+{
+  "id": "rare-breeds",
+  "title": "Rare Breeds",
+  "version": "1.0.0",
+  "client": "client/main.tsx",
+  "server": "server/index.ts",
+  "display": {
+    "minAspectRatio": "9:16",
+    "maxAspectRatio": "21:9",
+    "fullscreenButton": false
+  },
+  "currency": "RF",
+  "items": {
+    "gardenCommon": {
+      "name": "Garden Common baby",
+      "description": "Pure ink: rows straight from both parents.",
+      "lane": "garden"
+    },
+    "gardenSpotted": {
+      "name": "Garden Spotted baby",
+      "description": "A green pattern: spots, stripes or a patch.",
+      "lane": "garden"
+    },
+    "gardenMutant": {
+      "name": "Garden Mutant baby",
+      "description": "A violet pattern plus a head mutation.",
+      "lane": "garden"
+    },
+    "gardenPrismatic": {
+      "name": "Garden Prismatic baby",
+      "description": "Rainbow body, a mutation and a tail. The rarest hatch.",
+      "lane": "garden"
+    },
+    "groveCommon": {
+      "name": "Grove Common baby",
+      "description": "Pure ink: rows straight from both parents.",
+      "lane": "grove"
+    },
+    "groveSpotted": {
+      "name": "Grove Spotted baby",
+      "description": "A green pattern: spots, stripes or a patch.",
+      "lane": "grove"
+    },
+    "groveMutant": {
+      "name": "Grove Mutant baby",
+      "description": "A violet pattern plus a head mutation.",
+      "lane": "grove"
+    },
+    "grovePrismatic": {
+      "name": "Grove Prismatic baby",
+      "description": "Rainbow body, a mutation and a tail. The rarest hatch.",
+      "lane": "grove"
+    }
+  },
+  "actions": {
+    "breedGarden": {
+      "type": "external",
+      "label": "Breed in the Garden",
+      "description": "One baby from your chosen parents, minted to your Friend's wallet.",
+      "price": "5000",
+      "lane": "garden"
+    },
+    "tradeInGarden": {
+      "type": "external",
+      "label": "Trade in a Garden baby",
+      "description": "The baby leaves for the Sanctuary; its value is paid to your wallet.",
+      "lane": "garden"
+    },
+    "launchGarden": {
+      "type": "external",
+      "label": "Launch a Garden baby",
+      "description": "The Moon Slingshot: the baby flies, and a landing pays up to 10x its stake to your wallet.",
+      "lane": "garden"
+    },
+    "moveGarden": {
+      "type": "external",
+      "label": "Move a Garden baby",
+      "description": "Between your Friend's wallet and your own wallet.",
+      "lane": "garden"
+    },
+    "breedGrove": {
+      "type": "external",
+      "label": "Breed in the Grove",
+      "description": "One baby from your chosen parents, minted to your Friend's wallet.",
+      "price": "20000",
+      "lane": "grove"
+    },
+    "tradeInGrove": {
+      "type": "external",
+      "label": "Trade in a Grove baby",
+      "description": "The baby leaves for the Sanctuary; its value is paid to your wallet.",
+      "lane": "grove"
+    },
+    "launchGrove": {
+      "type": "external",
+      "label": "Launch a Grove baby",
+      "description": "The Moon Slingshot: the baby flies, and a landing pays up to 10x its stake to your wallet.",
+      "lane": "grove"
+    },
+    "moveGrove": {
+      "type": "external",
+      "label": "Move a Grove baby",
+      "description": "Between your Friend's wallet and your own wallet.",
+      "lane": "grove"
+    }
+  },
+  "legacy": [
+    "rare-breeds-births"
+  ]
+}
