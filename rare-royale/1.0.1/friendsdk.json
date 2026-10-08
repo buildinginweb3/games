@@ -1,0 +1,44 @@
+{
+  "id": "rare-royale",
+  "title": "Rare Royale",
+  "version": "1.0.1",
+  "client": "client/main.tsx",
+  "server": "server/index.ts",
+  "display": {
+    "minAspectRatio": "9:16",
+    "maxAspectRatio": "21:9",
+    "maxWidth": 1600,
+    "fullscreenButton": false
+  },
+  "currency": "RF",
+  "actions": {
+    "enter100": {
+      "type": "external",
+      "lane": "stake-100",
+      "price": "100",
+      "maxQuantity": 1,
+      "label": "Enter Rare Royale",
+      "description": "One round at the 100 RF stake against 49 house Friends. Prizes go to the Friend wallet."
+    },
+    "enter1000": {
+      "type": "external",
+      "lane": "stake-1000",
+      "price": "1000",
+      "maxQuantity": 1,
+      "label": "Enter Rare Royale",
+      "description": "One round at the 1,000 RF stake against 49 house Friends. Prizes go to the Friend wallet."
+    },
+    "enter10000": {
+      "type": "external",
+      "lane": "stake-10000",
+      "price": "10000",
+      "maxQuantity": 1,
+      "label": "Enter Rare Royale",
+      "description": "One round at the 10,000 RF stake against 49 house Friends. Prizes go to the Friend wallet."
+    }
+  },
+  "legacy": [
+    "rare-royale-private-v2",
+    "rare-royale-proofs-v2"
+  ]
+}
