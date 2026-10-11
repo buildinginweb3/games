@@ -1,0 +1,394 @@
+{
+  "id": "rare-flip",
+  "title": "Rare Flip",
+  "version": "1.1.1",
+  "client": "games/rare-flip/client.tsx",
+  "display": {
+    "minAspectRatio": "9:16",
+    "maxAspectRatio": "21:9",
+    "fullscreenButton": true
+  },
+  "currency": "RF",
+  "items": {
+    "flipReserve": {
+      "name": "Flip reserve"
+    }
+  },
+  "actions": {
+    "flip1000": {
+      "type": "draw",
+      "label": "Flip 1,000 RF",
+      "price": "1000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "1800"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip2000": {
+      "type": "draw",
+      "label": "Flip 2,000 RF",
+      "price": "2000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "3600"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip3000": {
+      "type": "draw",
+      "label": "Flip 3,000 RF",
+      "price": "3000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "5400"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip4000": {
+      "type": "draw",
+      "label": "Flip 4,000 RF",
+      "price": "4000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "7200"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip5000": {
+      "type": "draw",
+      "label": "Flip 5,000 RF",
+      "price": "5000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "9000"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip6000": {
+      "type": "draw",
+      "label": "Flip 6,000 RF",
+      "price": "6000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "10800"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip7000": {
+      "type": "draw",
+      "label": "Flip 7,000 RF",
+      "price": "7000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "12600"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip8000": {
+      "type": "draw",
+      "label": "Flip 8,000 RF",
+      "price": "8000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "14400"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip9000": {
+      "type": "draw",
+      "label": "Flip 9,000 RF",
+      "price": "9000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "16200"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip10000": {
+      "type": "draw",
+      "label": "Flip 10,000 RF",
+      "price": "10000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "18000"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip11000": {
+      "type": "draw",
+      "label": "Flip 11,000 RF",
+      "price": "11000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "19800"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip12000": {
+      "type": "draw",
+      "label": "Flip 12,000 RF",
+      "price": "12000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "21600"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip13000": {
+      "type": "draw",
+      "label": "Flip 13,000 RF",
+      "price": "13000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "23400"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip14000": {
+      "type": "draw",
+      "label": "Flip 14,000 RF",
+      "price": "14000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "25200"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip15000": {
+      "type": "draw",
+      "label": "Flip 15,000 RF",
+      "price": "15000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "27000"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip16000": {
+      "type": "draw",
+      "label": "Flip 16,000 RF",
+      "price": "16000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "28800"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip17000": {
+      "type": "draw",
+      "label": "Flip 17,000 RF",
+      "price": "17000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "30600"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip18000": {
+      "type": "draw",
+      "label": "Flip 18,000 RF",
+      "price": "18000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "32400"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip19000": {
+      "type": "draw",
+      "label": "Flip 19,000 RF",
+      "price": "19000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "34200"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip20000": {
+      "type": "draw",
+      "label": "Flip 20,000 RF",
+      "price": "20000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "36000"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip21000": {
+      "type": "draw",
+      "label": "Flip 21,000 RF",
+      "price": "21000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "37800"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip22000": {
+      "type": "draw",
+      "label": "Flip 22,000 RF",
+      "price": "22000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "39600"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip23000": {
+      "type": "draw",
+      "label": "Flip 23,000 RF",
+      "price": "23000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "41400"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip24000": {
+      "type": "draw",
+      "label": "Flip 24,000 RF",
+      "price": "24000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "43200"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    },
+    "flip25000": {
+      "type": "draw",
+      "label": "Flip 25,000 RF",
+      "price": "25000",
+      "maxQuantity": 1,
+      "table": [
+        {
+          "weight": 5000,
+          "pays": "45000"
+        },
+        {
+          "weight": 5000
+        }
+      ]
+    }
+  }
+}
