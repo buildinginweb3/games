@@ -1,0 +1,215 @@
+{
+  "id": "rare-flip",
+  "title": "Rare Flip",
+  "version": "1.2.0",
+  "client": "games/rare-flip/client.tsx",
+  "display": {
+    "minAspectRatio": "9:16",
+    "maxAspectRatio": "21:9",
+    "fullscreenButton": true
+  },
+  "currency": "RF",
+  "actions": {
+    "flip1000": {
+      "type": "external",
+      "lane": "main",
+      "price": "1000",
+      "maxQuantity": 1,
+      "label": "Flip 1,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip2000": {
+      "type": "external",
+      "lane": "main",
+      "price": "2000",
+      "maxQuantity": 1,
+      "label": "Flip 2,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip3000": {
+      "type": "external",
+      "lane": "main",
+      "price": "3000",
+      "maxQuantity": 1,
+      "label": "Flip 3,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip4000": {
+      "type": "external",
+      "lane": "main",
+      "price": "4000",
+      "maxQuantity": 1,
+      "label": "Flip 4,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip5000": {
+      "type": "external",
+      "lane": "main",
+      "price": "5000",
+      "maxQuantity": 1,
+      "label": "Flip 5,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip6000": {
+      "type": "external",
+      "lane": "main",
+      "price": "6000",
+      "maxQuantity": 1,
+      "label": "Flip 6,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip7000": {
+      "type": "external",
+      "lane": "main",
+      "price": "7000",
+      "maxQuantity": 1,
+      "label": "Flip 7,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip8000": {
+      "type": "external",
+      "lane": "main",
+      "price": "8000",
+      "maxQuantity": 1,
+      "label": "Flip 8,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip9000": {
+      "type": "external",
+      "lane": "main",
+      "price": "9000",
+      "maxQuantity": 1,
+      "label": "Flip 9,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip10000": {
+      "type": "external",
+      "lane": "main",
+      "price": "10000",
+      "maxQuantity": 1,
+      "label": "Flip 10,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip11000": {
+      "type": "external",
+      "lane": "main",
+      "price": "11000",
+      "maxQuantity": 1,
+      "label": "Flip 11,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip12000": {
+      "type": "external",
+      "lane": "main",
+      "price": "12000",
+      "maxQuantity": 1,
+      "label": "Flip 12,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip13000": {
+      "type": "external",
+      "lane": "main",
+      "price": "13000",
+      "maxQuantity": 1,
+      "label": "Flip 13,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip14000": {
+      "type": "external",
+      "lane": "main",
+      "price": "14000",
+      "maxQuantity": 1,
+      "label": "Flip 14,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip15000": {
+      "type": "external",
+      "lane": "main",
+      "price": "15000",
+      "maxQuantity": 1,
+      "label": "Flip 15,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip16000": {
+      "type": "external",
+      "lane": "main",
+      "price": "16000",
+      "maxQuantity": 1,
+      "label": "Flip 16,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip17000": {
+      "type": "external",
+      "lane": "main",
+      "price": "17000",
+      "maxQuantity": 1,
+      "label": "Flip 17,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip18000": {
+      "type": "external",
+      "lane": "main",
+      "price": "18000",
+      "maxQuantity": 1,
+      "label": "Flip 18,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip19000": {
+      "type": "external",
+      "lane": "main",
+      "price": "19000",
+      "maxQuantity": 1,
+      "label": "Flip 19,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip20000": {
+      "type": "external",
+      "lane": "main",
+      "price": "20000",
+      "maxQuantity": 1,
+      "label": "Flip 20,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip21000": {
+      "type": "external",
+      "lane": "main",
+      "price": "21000",
+      "maxQuantity": 1,
+      "label": "Flip 21,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip22000": {
+      "type": "external",
+      "lane": "main",
+      "price": "22000",
+      "maxQuantity": 1,
+      "label": "Flip 22,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip23000": {
+      "type": "external",
+      "lane": "main",
+      "price": "23000",
+      "maxQuantity": 1,
+      "label": "Flip 23,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip24000": {
+      "type": "external",
+      "lane": "main",
+      "price": "24000",
+      "maxQuantity": 1,
+      "label": "Flip 24,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    },
+    "flip25000": {
+      "type": "external",
+      "lane": "main",
+      "price": "25000",
+      "maxQuantity": 1,
+      "label": "Flip 25,000 RF",
+      "description": "One coin flip. A WIN pays twice the bet less your Friend generation edge (1% for Gen 1 to 6% for Gen 6) to the Friend wallet. The randomness fee is paid in ETH with the flip."
+    }
+  },
+  "server": "server/index.ts"
+}
