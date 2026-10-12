@@ -1,0 +1,585 @@
+{
+  "id": "ashwalk",
+  "title": "Ashwalk",
+  "version": "1.1.1",
+  "client": "client/main.tsx",
+  "server": "server/index.ts",
+  "display": {
+    "fullscreenButton": false
+  },
+  "currency": "RF",
+  "items": {
+    "fogGale": {
+      "name": "The gale",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogChoir": {
+      "name": "The choir",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogGear": {
+      "name": "The works",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogRoof": {
+      "name": "The sign",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogAntler": {
+      "name": "The antler",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogMoon": {
+      "name": "The moon",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogHallow": {
+      "name": "The hallow",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogMirror": {
+      "name": "The mirror",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogTunnel": {
+      "name": "The tunnel",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogYule": {
+      "name": "The eve",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogHoist": {
+      "name": "The hoist",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogStack": {
+      "name": "The stack",
+      "description": "Opens this fog for this Friend."
+    },
+    "fogPass": {
+      "name": "Fog pass",
+      "description": "Opens every fog now, in any order. Fogs still to come open on their release dates."
+    },
+    "lookLatch": {
+      "name": "Realistic latch",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookGale": {
+      "name": "Realistic gale",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookChoir": {
+      "name": "Realistic choir",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookGear": {
+      "name": "Realistic works",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookRoof": {
+      "name": "Realistic sign",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookAntler": {
+      "name": "Realistic antler",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookMoon": {
+      "name": "Realistic moon",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookHallow": {
+      "name": "Realistic hallow",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookMirror": {
+      "name": "Realistic mirror",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookTunnel": {
+      "name": "Realistic tunnel",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookYule": {
+      "name": "Realistic eve",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookHoist": {
+      "name": "Realistic hoist",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "lookStack": {
+      "name": "Realistic stack",
+      "description": "The realistic look of this fog.",
+      "lane": "wardrobe"
+    },
+    "capeRed": {
+      "name": "Red cape",
+      "description": "A long red cape behind you.",
+      "lane": "wardrobe"
+    },
+    "capeWhite": {
+      "name": "White cape",
+      "description": "A white cape.",
+      "lane": "wardrobe"
+    },
+    "capeRainbow": {
+      "name": "Rainbow cape",
+      "description": "A rainbow cape.",
+      "lane": "wardrobe"
+    },
+    "capeCamo": {
+      "name": "Camo cape",
+      "description": "A camo cape.",
+      "lane": "wardrobe"
+    },
+    "capeStripes": {
+      "name": "Striped cape",
+      "description": "Red, white, and blue.",
+      "lane": "wardrobe"
+    },
+    "capePink": {
+      "name": "Pink cape",
+      "description": "A bright pink cape.",
+      "lane": "wardrobe"
+    },
+    "capeHalloween": {
+      "name": "Halloween cape",
+      "description": "Orange, purple, and cream.",
+      "lane": "wardrobe"
+    },
+    "capeBlack": {
+      "name": "Black cape",
+      "description": "A dark cape.",
+      "lane": "wardrobe"
+    },
+    "capeGold": {
+      "name": "Gold cape",
+      "description": "Gold with a blue band.",
+      "lane": "wardrobe"
+    },
+    "capeEmber": {
+      "name": "Ember cape",
+      "description": "Torn orange streaks.",
+      "lane": "wardrobe"
+    },
+    "capeScarlet": {
+      "name": "Scarlet cape",
+      "description": "Red with a white edge.",
+      "lane": "wardrobe"
+    },
+    "capeBlue": {
+      "name": "Blue cape",
+      "description": "A bright blue cape.",
+      "lane": "wardrobe"
+    },
+    "capeYule": {
+      "name": "Yule cape",
+      "description": "Red, green, and white.",
+      "lane": "wardrobe"
+    },
+    "capeFrost": {
+      "name": "Frost cape",
+      "description": "Ice blue and white.",
+      "lane": "wardrobe"
+    },
+    "capeGilded": {
+      "name": "Gilded cape",
+      "description": "Red with a gold edge.",
+      "lane": "wardrobe"
+    },
+    "capeChristmas": {
+      "name": "Christmas cape",
+      "description": "Red, with snow on the edge.",
+      "lane": "wardrobe"
+    }
+  },
+  "actions": {
+    "openGale": {
+      "type": "purchase",
+      "label": "Open the gale",
+      "price": "1000",
+      "gives": {
+        "fogGale": 1
+      }
+    },
+    "openChoir": {
+      "type": "purchase",
+      "label": "Open the choir",
+      "price": "1000",
+      "gives": {
+        "fogChoir": 1
+      }
+    },
+    "openGear": {
+      "type": "purchase",
+      "label": "Open the works",
+      "price": "1000",
+      "gives": {
+        "fogGear": 1
+      }
+    },
+    "openRoof": {
+      "type": "purchase",
+      "label": "Open the sign",
+      "price": "1000",
+      "gives": {
+        "fogRoof": 1
+      }
+    },
+    "openAntler": {
+      "type": "purchase",
+      "label": "Open the antler",
+      "price": "1000",
+      "gives": {
+        "fogAntler": 1
+      }
+    },
+    "openMoon": {
+      "type": "purchase",
+      "label": "Open the moon",
+      "price": "1000",
+      "gives": {
+        "fogMoon": 1
+      }
+    },
+    "openHallow": {
+      "type": "purchase",
+      "label": "Open the hallow",
+      "price": "1000",
+      "gives": {
+        "fogHallow": 1
+      }
+    },
+    "openMirror": {
+      "type": "purchase",
+      "label": "Open the mirror",
+      "price": "1000",
+      "gives": {
+        "fogMirror": 1
+      }
+    },
+    "openTunnel": {
+      "type": "purchase",
+      "label": "Open the tunnel",
+      "price": "1000",
+      "gives": {
+        "fogTunnel": 1
+      }
+    },
+    "openYule": {
+      "type": "purchase",
+      "label": "Open the eve",
+      "price": "1000",
+      "gives": {
+        "fogYule": 1
+      }
+    },
+    "openHoist": {
+      "type": "purchase",
+      "label": "Open the hoist",
+      "price": "1000",
+      "gives": {
+        "fogHoist": 1
+      }
+    },
+    "openStack": {
+      "type": "purchase",
+      "label": "Open the stack",
+      "price": "1000",
+      "gives": {
+        "fogStack": 1
+      }
+    },
+    "buyPass": {
+      "type": "purchase",
+      "label": "Fog pass",
+      "description": "Every fog that is sold, in one payment.",
+      "price": "9000",
+      "gives": {
+        "fogPass": 1
+      }
+    },
+    "life": {
+      "type": "purchase",
+      "label": "Extra life",
+      "description": "One more life on this board.",
+      "price": "100",
+      "maxQuantity": 5
+    },
+    "buyLookLatch": {
+      "type": "purchase",
+      "label": "Realistic latch",
+      "price": "250",
+      "gives": {
+        "lookLatch": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookGale": {
+      "type": "purchase",
+      "label": "Realistic gale",
+      "price": "250",
+      "gives": {
+        "lookGale": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookChoir": {
+      "type": "purchase",
+      "label": "Realistic choir",
+      "price": "250",
+      "gives": {
+        "lookChoir": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookGear": {
+      "type": "purchase",
+      "label": "Realistic works",
+      "price": "250",
+      "gives": {
+        "lookGear": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookRoof": {
+      "type": "purchase",
+      "label": "Realistic sign",
+      "price": "250",
+      "gives": {
+        "lookRoof": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookAntler": {
+      "type": "purchase",
+      "label": "Realistic antler",
+      "price": "250",
+      "gives": {
+        "lookAntler": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookMoon": {
+      "type": "purchase",
+      "label": "Realistic moon",
+      "price": "250",
+      "gives": {
+        "lookMoon": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookHallow": {
+      "type": "purchase",
+      "label": "Realistic hallow",
+      "price": "250",
+      "gives": {
+        "lookHallow": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookMirror": {
+      "type": "purchase",
+      "label": "Realistic mirror",
+      "price": "250",
+      "gives": {
+        "lookMirror": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookTunnel": {
+      "type": "purchase",
+      "label": "Realistic tunnel",
+      "price": "250",
+      "gives": {
+        "lookTunnel": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookYule": {
+      "type": "purchase",
+      "label": "Realistic eve",
+      "price": "250",
+      "gives": {
+        "lookYule": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookHoist": {
+      "type": "purchase",
+      "label": "Realistic hoist",
+      "price": "250",
+      "gives": {
+        "lookHoist": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyLookStack": {
+      "type": "purchase",
+      "label": "Realistic stack",
+      "price": "250",
+      "gives": {
+        "lookStack": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeRed": {
+      "type": "purchase",
+      "label": "Red cape",
+      "price": "300",
+      "gives": {
+        "capeRed": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeWhite": {
+      "type": "purchase",
+      "label": "White cape",
+      "price": "300",
+      "gives": {
+        "capeWhite": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeRainbow": {
+      "type": "purchase",
+      "label": "Rainbow cape",
+      "price": "300",
+      "gives": {
+        "capeRainbow": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeCamo": {
+      "type": "purchase",
+      "label": "Camo cape",
+      "price": "300",
+      "gives": {
+        "capeCamo": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeStripes": {
+      "type": "purchase",
+      "label": "Striped cape",
+      "price": "300",
+      "gives": {
+        "capeStripes": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapePink": {
+      "type": "purchase",
+      "label": "Pink cape",
+      "price": "300",
+      "gives": {
+        "capePink": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeHalloween": {
+      "type": "purchase",
+      "label": "Halloween cape",
+      "price": "600",
+      "gives": {
+        "capeHalloween": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeBlack": {
+      "type": "purchase",
+      "label": "Black cape",
+      "price": "300",
+      "gives": {
+        "capeBlack": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeGold": {
+      "type": "purchase",
+      "label": "Gold cape",
+      "price": "300",
+      "gives": {
+        "capeGold": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeEmber": {
+      "type": "purchase",
+      "label": "Ember cape",
+      "price": "300",
+      "gives": {
+        "capeEmber": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeScarlet": {
+      "type": "purchase",
+      "label": "Scarlet cape",
+      "price": "300",
+      "gives": {
+        "capeScarlet": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeBlue": {
+      "type": "purchase",
+      "label": "Blue cape",
+      "price": "300",
+      "gives": {
+        "capeBlue": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeYule": {
+      "type": "purchase",
+      "label": "Yule cape",
+      "price": "300",
+      "gives": {
+        "capeYule": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeFrost": {
+      "type": "purchase",
+      "label": "Frost cape",
+      "price": "300",
+      "gives": {
+        "capeFrost": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeGilded": {
+      "type": "purchase",
+      "label": "Gilded cape",
+      "price": "300",
+      "gives": {
+        "capeGilded": 1
+      },
+      "lane": "wardrobe"
+    },
+    "buyCapeChristmas": {
+      "type": "purchase",
+      "label": "Christmas cape",
+      "price": "600",
+      "gives": {
+        "capeChristmas": 1
+      },
+      "lane": "wardrobe"
+    }
+  }
+}
