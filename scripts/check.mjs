@@ -163,6 +163,7 @@ const baseAt = process.argv.indexOf("--base");
 if (baseAt !== -1) {
   const base = process.argv[baseAt + 1];
   if (!base) { console.error("--base needs a git ref."); process.exit(2); }
+  try { git("rev-parse", "--verify", "--quiet", `${base}^{commit}`); } catch { console.error(`--base ${base} is not a commit here; fetch it first (git fetch origin main).`); process.exit(2); }
   const changes = git("diff", "--name-status", "--no-renames", "-z", `${base}...HEAD`).split("\0").filter(Boolean);
   // Uncommitted work counts too when the check runs locally.
   const local = git("status", "--porcelain", "--no-renames", "-z", "--untracked-files=all").split("\0").filter(Boolean)
