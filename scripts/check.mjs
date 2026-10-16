@@ -43,7 +43,7 @@ ${hasCss ? '<link rel="stylesheet" href="./game.css">\n' : ""}</head>
 const errors = [];
 const notes = [];
 const fail = (where, message) => errors.push(`${where}: ${message}`);
-const git = (...args) => execFileSync("git", args, { encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
+const git = (...args) => execFileSync("git", args, { encoding: "utf8", maxBuffer: 64 * 1024 * 1024, stdio: ["ignore", "pipe", "pipe"] });
 const readJson = path => { try { return JSON.parse(readFileSync(path, "utf8")); } catch (error) { fail(path, `not valid JSON (${error.message})`); return undefined; } };
 const isObject = value => typeof value === "object" && value !== null && !Array.isArray(value);
 const compareVersions = (a, b) => { const x = a.split(".").map(Number), y = b.split(".").map(Number); return x[0] - y[0] || x[1] - y[1] || x[2] - y[2]; };
@@ -194,7 +194,7 @@ if (baseAt !== -1) {
       const priced = Object.values(manifest.actions ?? {}).filter(action => action?.price !== undefined || ["draw", "custom", "external"].includes(action?.type));
       notes.push(`${id} ${version}: ${before.length ? "update" : "new game"}`);
       if (manifest.server) notes.push(`${id} ${version}: has server rules; Rare Friends deploys them from the listed source`);
-      if (priced.length) notes.push(`${id} ${version}: ${priced.length} paid actions need contract registration before they go live`);
+      if (priced.length && !before.length) notes.push(`${id} ${version}: ${priced.length} paid actions need contract registration before they go live`);
     }
   }
 }
