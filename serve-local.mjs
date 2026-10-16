@@ -1,11 +1,11 @@
 // Local HTTPS games origin for testing the website on a LAN (Privy needs HTTPS there).
 // Serves this folder like play.rarefriends.com, but lets the local website frame it.
-//   node serve-local.mjs <cert.pem> <key.pem> [port=3005] [frame-ancestors="https://192.168.0.176:3000 https://localhost:3000"]
+//   node serve-local.mjs <cert.pem> <key.pem> [port=3005] [frame-ancestors="https://localhost:3000"]
 import { createServer } from "node:https";
 import { readFileSync, statSync } from "node:fs";
 import { extname, join, normalize, resolve } from "node:path";
 
-const [cert, key, port = "3005", ancestors = "https://192.168.0.176:3000 https://localhost:3000"] = process.argv.slice(2);
+const [cert, key, port = "3005", ancestors = "https://localhost:3000"] = process.argv.slice(2);
 const root = resolve(import.meta.dirname);
 const TYPES = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8",
   ".json": "application/json", ".woff2": "font/woff2", ".png": "image/png", ".webp": "image/webp", ".svg": "image/svg+xml" };
