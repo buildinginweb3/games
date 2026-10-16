@@ -194,6 +194,8 @@ if (baseAt !== -1) {
       const priced = Object.values(manifest.actions ?? {}).filter(action => action?.price !== undefined || ["draw", "custom", "external"].includes(action?.type));
       notes.push(`${id} ${version}: ${before.length ? "update" : "new game"}`);
       if (manifest.server) notes.push(`${id} ${version}: has server rules; Rare Friends deploys them from the listed source`);
+      const source = (() => { try { return JSON.parse(readFileSync(`${id}/listing.json`, "utf8")).source; } catch { return undefined; } })();
+      if ((manifest.server || priced.length) && !source) fail(`${id}/listing.json`, "needs \"source\": a public link to the code, because the game has server rules or paid actions");
       if (priced.length && !before.length) notes.push(`${id} ${version}: ${priced.length} paid actions need contract registration before they go live`);
     }
   }
