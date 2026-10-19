@@ -1,21 +1,21 @@
 # Rare Arcade
 
-Pull the lever. The drum turns on randomness the platform chose before your
-transaction was sent, and it lands on one of four things.
+Three cabinets, one lever. The drum turns on randomness the platform chose
+before your transaction was sent, and it lands on one of four things.
 
-| Outcome | What you get |
-| --- | --- |
-| No prize | Nothing. The most common result. |
-| Cashback | 19 RF. The gross was 20 RF. |
-| Generations Friend | A Rare Friend backed by 20 RF. Keep it, or claim 19 RF. |
-| Genesis Friend | A Genesis Rare Friend backed by 100 RF. Keep it, or claim 95 RF. |
+| Cabinet | Pull price | Generations Friend | Genesis Friend |
+| --- | --- | --- | --- |
+| STARTER | 5 USDG | backed by 20 — keep it, or claim 19 | backed by 80 — keep it, or claim 76 |
+| CLASSIC | 25 USDG | backed by 100 — keep it, or claim 95 | backed by 400 — keep it, or claim 380 |
+| GRAND | 125 USDG | backed by 500 — keep it, or claim 475 | backed by 2,000 — keep it, or claim 1,900 |
 
-A pull costs **10 RF**.
+Cashback pays 0.95, 4.75 or 23.75 USDG on a gross of 1, 5 or 25 USDG. An empty
+pull pays nothing.
 
 ## Keep it or take the money
 
-Win a Friend and it lands in your Friend's wallet, backed by RF. It is yours to
-keep — nothing is due, nothing is borrowed, and the backing is simply yours
+Win a Friend and it lands in your Friend's wallet, backed by USDG. It is yours
+to keep — nothing is due, nothing is borrowed, and the backing is simply yours
 afterwards.
 
 Or claim the backing instead: burn the Friend and the backing pays out less the
@@ -25,22 +25,36 @@ stops, not before.
 ## The fee
 
 **5%**, taken in three places: on what you spend, on a cashback win, and on any
-backing you choose to claim. Tokens need no backing — a cashback win pays for
+backing you choose to claim. Cashback needs no backing of its own — it pays for
 itself.
+
+## Backing is a payout, not a valuation
+
+The arcade does not price Rare Friends, and nothing here is an estimate of what
+a Friend is worth. "Backed by 20 USDG" means the arcade is willing to pay 20
+USDG out of its prize pool for that Friend — a published payout, fixed before
+you pull.
+
+That fixed ladder is a deliberate constraint, not an oversight. A Friend's
+manifest `redeemValue` is a constant, so a genuinely player-set backing amount
+cannot be expressed by a `draw` and `redeem` action. It would need an external
+lane and a contract that Rare Friends write. That is not in this version; the
+three cabinets are the backing choice this build can honestly make.
 
 ## Your Friend decides the odds
 
 The odds are set by your Friend's generation, before you play. Generation 1 is
-the rarest Friend and plays the best table; generation 6 the worst.
+the rarest Friend and plays the best table; generation 6 the worst. RTP is
+computed from the published payouts, not asserted.
 
-| Generation | RTP |
-| --- | --- |
-| 1 | 95.00% |
-| 2 | 93.67% |
-| 3 | 92.34% |
-| 4 | 91.01% |
-| 5 | 89.68% |
-| 6 | 88.35% |
+| Generation | STARTER | CLASSIC | GRAND |
+| --- | --- | --- | --- |
+| 1 | 93.48% | 93.10% | 93.10% |
+| 2 | 92.26% | 91.80% | 91.77% |
+| 3 | 90.93% | 90.47% | 90.44% |
+| 4 | 89.56% | 89.18% | 89.07% |
+| 5 | 88.35% | 87.85% | 87.74% |
+| 6 | 87.13% | 86.56% | 86.41% |
 
 Open **PUBLISHED ODDS** before your first pull to see every outcome and exactly
 what each one pays. Those numbers come from the same file that generates the
