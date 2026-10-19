@@ -1,75 +1,59 @@
 # Rare Arcade
 
-Three cabinets, one lever. The drum turns on randomness the platform chose
-before your transaction was sent, and it lands on one of four things.
+Rare Arcade is a marketplace of player-built prize machines.
 
-| Cabinet | Pull price | Generations Friend | Genesis Friend |
-| --- | --- | --- | --- |
-| STARTER | 5 USDG | backed by 20 — keep it, or claim 19 | backed by 80 — keep it, or claim 76 |
-| CLASSIC | 25 USDG | backed by 100 — keep it, or claim 95 | backed by 400 — keep it, or claim 380 |
-| GRAND | 125 USDG | backed by 500 — keep it, or claim 475 | backed by 2,000 — keep it, or claim 1,900 |
+Anyone can open a cabinet, stock it with Rare Friends and USDG, set the pull
+price and the number of tickets, and put it on the floor. Players pull one
+ticket at a time from a shuffled finite deck. A ticket can carry a Rare Friend,
+a USDG prize, or nothing.
 
-Cashback pays 0.95, 4.75 or 23.75 USDG on a gross of 1, 5 or 25 USDG. An empty
-pull pays nothing.
+## Open your own machine
 
-## Keep it or take the money
+- Stock up to 16 Rare Friends from your wallet. Each one gets a USDG backing you
+  choose, held by the machine until someone wins it.
+- Add up to 8 USDG prize lines, with up to 20 copies of each.
+- Set a price from 0.1 to 1,000 USDG and 2 to 1,000 tickets.
+- Choose a CLASSIC, CAPSULE, TALLBOY or MINI cabinet.
+- Check the floor RTP before you publish. It must be between 70% and 105%.
 
-Win a Friend and it lands in your Friend's wallet, backed by USDG. It is yours
-to keep — nothing is due, nothing is borrowed, and the backing is simply yours
-afterwards.
+You can pause and resume a machine, collect your receipts whenever you like, or
+cancel it before its first pull to get the remaining USDG and the Friends back.
+After the first pull the deck is locked for the players.
 
-Or claim the backing instead: burn the Friend and the backing pays out less the
-arcade's 5%. That is the whole choice, and it is yours to make after the drum
-stops, not before.
+## Play
+
+1. Pick a machine and check its price, tickets left, prize pool, top backing and
+   published floor RTP.
+2. Pull the lever. You pay the machine's price.
+3. If the ticket carries USDG, it is paid to you immediately.
+4. If it carries a Rare Friend, the Friend goes to your Friend wallet. Keep it,
+   or open **Claims** and take its USDG backing. Taking the money burns the
+   Friend; keeping it is always your choice.
+
+Every ticket is drawn exactly once. The floor shows how many tickets remain, so
+you always know what is left in the deck.
 
 ## The fee
 
-**5%**, taken in three places: on what you spend, on a cashback win, and on any
-backing you choose to claim. Cashback needs no backing of its own — it pays for
-itself.
+The platform keeps **5% of every pull**. The creator receives the other **95%**.
+There is no fee on a claim: taking a Friend's backing pays the full amount its
+creator attached.
 
-## Backing is a payout, not a valuation
+## Backing is a payout
 
-The arcade does not price Rare Friends, and nothing here is an estimate of what
-a Friend is worth. "Backed by 20 USDG" means the arcade is willing to pay 20
-USDG out of its prize pool for that Friend — a published payout, fixed before
-you pull.
+The arcade does not value Rare Friends. "Backed by 10 USDG" means the machine
+pays 10 USDG if you choose to burn that Friend — a published payout fixed before
+the pull, not an estimate of what the Friend is worth.
 
-That fixed ladder is a deliberate constraint, not an oversight. A Friend's
-manifest `redeemValue` is a constant, so a genuinely player-set backing amount
-cannot be expressed by a `draw` and `redeem` action. It would need an external
-lane and a contract that Rare Friends write. That is not in this version; the
-three cabinets are the backing choice this build can honestly make.
+## Status
 
-## Your Friend decides the odds
+Rare Arcade 0.2.0 is built on a FriendSDK **external lane**. The marketplace
+needs a contract that can escrow Rare Friends, hold the USDG prize pool, settle
+a finite deck, pay backing on burn, split each pull 95/5 and refund a cancelled
+machine. The SDK does not deploy that contract for external games.
 
-The odds are set by your Friend's generation, before you play. Generation 1 is
-the rarest Friend and plays the best table; generation 6 the worst. RTP is
-computed from the published payouts, not asserted.
-
-| Generation | STARTER | CLASSIC | GRAND |
-| --- | --- | --- | --- |
-| 1 | 93.48% | 93.10% | 93.10% |
-| 2 | 92.26% | 91.80% | 91.77% |
-| 3 | 90.93% | 90.47% | 90.44% |
-| 4 | 89.56% | 89.18% | 89.07% |
-| 5 | 88.35% | 87.85% | 87.74% |
-| 6 | 87.13% | 86.56% | 86.41% |
-
-Open **PUBLISHED ODDS** before your first pull to see every outcome and exactly
-what each one pays. Those numbers come from the same file that generates the
-on-chain registration, so the table you read is the table that settles.
-
-## Open question for Rare Friends
-
-**Does a Friend activated on rarefriends.com stay activated if it is won in a
-cabinet?**
-
-This build cannot answer it, and we would rather say so than guess. A cabinet
-prize is an in-game item bound to the Friend wallet: this game only ever mints
-and burns those items, and it never holds, transfers or deactivates a Rare
-Friends NFT. So nothing here should be able to affect an activation — but the
-game also has no chain access of its own, so it cannot confirm that either.
-
-If the answer turns out to be no, the fix is an external lane whose contract
-Rare Friends write. That is not in this version.
+This repository includes `dev/arcade-stub.ts`, an executable dev version of the
+full contract, relay and watcher. The game runs end to end against it in the
+FriendSDK dev host. Before mainnet, Rare Friends must author and deploy the
+production contract, adapter and watcher. Until that happens this is a dev
+build and should not be used with real funds or real Rare Friends.
