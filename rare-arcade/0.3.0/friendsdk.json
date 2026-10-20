@@ -1,0 +1,90 @@
+{
+  "id": "rare-arcade",
+  "title": "Rare Arcade",
+  "version": "0.3.0",
+  "client": "client/main.tsx",
+  "server": "server/index.ts",
+  "currency": "USDG",
+  "display": {
+    "minAspectRatio": "9:16",
+    "maxAspectRatio": "21:9",
+    "fullscreenButton": true
+  },
+  "items": {
+    "nft": {
+      "name": "Robinhood NFT",
+      "description": "Any ERC-721 or ERC-1155 NFT on Robinhood Chain stocked inside a player-created prize machine. The winner keeps the NFT, or takes the USDG backing the creator attached to it.",
+      "lane": "arcade"
+    }
+  },
+  "actions": {
+    "createMachine": {
+      "type": "external",
+      "lane": "arcade",
+      "label": "Open a prize machine",
+      "description": "Stock a new machine with any Robinhood Chain NFTs and USDG prizes, set its pull price and its finite ticket deck, and put it on the arcade floor. The creator receives 95% of every pull.",
+      "maxQuantity": 1
+    },
+    "pull": {
+      "type": "external",
+      "lane": "arcade",
+      "label": "Pull the lever",
+      "description": "One ticket from the selected machine's finite deck. Win a stocked NFT, a USDG prize, or nothing. The platform keeps 5% of the pull.",
+      "maxQuantity": 1
+    },
+    "keepPrize": {
+      "type": "external",
+      "lane": "arcade",
+      "label": "Keep the NFT",
+      "description": "Keep a won NFT and move it to your Friend wallet. Its USDG backing returns to the machine creator.",
+      "maxQuantity": 1
+    },
+    "claimBacking": {
+      "type": "external",
+      "lane": "arcade",
+      "label": "Take the backing",
+      "description": "Take the USDG backing a creator attached to a won NFT. The NFT returns to its creator instead of being burned.",
+      "maxQuantity": 1
+    },
+    "withdrawMachine": {
+      "type": "external",
+      "lane": "arcade",
+      "label": "Collect creator receipts",
+      "description": "Move the 95% creator share of every pull made on one of your machines into your wallet.",
+      "maxQuantity": 1
+    },
+    "pauseMachine": {
+      "type": "external",
+      "lane": "arcade",
+      "label": "Pause machine",
+      "description": "Take one of your machines off the floor without emptying it. Resume it whenever you like.",
+      "maxQuantity": 1
+    },
+    "resumeMachine": {
+      "type": "external",
+      "lane": "arcade",
+      "label": "Resume machine",
+      "description": "Put a paused machine back on the floor.",
+      "maxQuantity": 1
+    },
+    "cancelMachine": {
+      "type": "external",
+      "lane": "arcade",
+      "label": "Cancel machine",
+      "description": "Before its first pull, empty a machine: the USDG prize pool and backing are refunded and its NFTs return to your owner wallet.",
+      "maxQuantity": 1
+    }
+  },
+  "leaderboards": {
+    "biggestWin": {
+      "order": "desc",
+      "operator": "best",
+      "reset": "never"
+    },
+    "topCreator": {
+      "order": "desc",
+      "operator": "set",
+      "reset": "never"
+    }
+  }
+}
